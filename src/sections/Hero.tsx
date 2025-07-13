@@ -10,7 +10,7 @@ export const HeroSection = () => {
               Available for new projects
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-              Hi, I'm <span className="text-blue-400">Dhiraj Kumar</span>
+              Hi, I&apos;m <span className="text-blue-400">Dhiraj Kumar</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl">
               Full-stack developer skilled in building scalable, API-driven web applications using Node.js, React.js, MongoDB, and MySQL. Strong in debugging, developing RESTful APIs, and effective in leadership and communication.

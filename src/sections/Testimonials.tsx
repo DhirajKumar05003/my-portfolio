@@ -51,7 +51,7 @@ export const TestimonialsSection = () => {
                   <div className="w-20 h-20 mb-4 rounded-full overflow-hidden border-4 border-blue-600">
                     <Image src={t.avatar} alt={t.name} width={80} height={80} className="object-cover w-full h-full" />
                   </div>
-                  <p className="text-gray-300 mb-4">"{t.text}"</p>
+                  <p className="text-gray-300 mb-4">&quot;{t.text}&quot;</p>
                   <div className="font-bold text-blue-400">{t.name}</div>
                   <div className="text-sm text-gray-400">{t.position}</div>
                 </div>

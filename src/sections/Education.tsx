@@ -10,12 +10,12 @@ export const EducationSection = () => (
           <h2 className="text-3xl font-bold mb-4">Education</h2>
           <div className="space-y-4 mb-8 max-w-xl">
             <div className="bg-gray-800/70 rounded-xl shadow-lg p-6">
-              <div className="font-semibold text-lg">Master's in Computer Application</div>
+              <div className="font-semibold text-lg">Master&apos;s in Computer Application</div>
               <div className="text-gray-400">Manav Rachna International Institute of Research and Studies</div>
               <div className="text-sm text-gray-500">Year of Passing: 2026 | CGPA: 7.85*/10</div>
             </div>
             <div className="bg-gray-800/70 rounded-xl shadow-lg p-6">
-              <div className="font-semibold text-lg">Bachelor's in Computer Science (Honours)</div>
+              <div className="font-semibold text-lg">Bachelor&apos;s in Computer Science (Honours)</div>
               <div className="text-gray-400">CVS College, University of Delhi</div>
               <div className="text-sm text-gray-500">Year of Passing: 2024 | CGPA: 7.189</div>
             </div>

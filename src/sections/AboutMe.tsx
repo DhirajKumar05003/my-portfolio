@@ -9,7 +9,7 @@ export const AboutMeSection = () => (
         <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl">
-            I'm Dhiraj Kumar, a passionate full-stack developer from New Delhi, India. I specialize in building scalable, API-driven web applications using modern technologies like Node.js, React.js, MongoDB, and MySQL. With strong debugging skills and experience in developing RESTful APIs, I'm also effective in leadership and communication. I have proven involvement in student tech communities and love contributing to meaningful projects.
+            I&apos;m Dhiraj Kumar, a passionate full-stack developer from New Delhi, India. I specialize in building scalable, API-driven web applications using modern technologies like Node.js, React.js, MongoDB, and MySQL. With strong debugging skills and experience in developing RESTful APIs, I&apos;m also effective in leadership and communication. I have proven involvement in student tech communities and love contributing to meaningful projects.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
             <div><strong>Location:</strong> New Delhi, Delhi, India</div>
