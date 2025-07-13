@@ -20,22 +20,24 @@ export const ContactSection = () => {
       return;
     }
     
-    // Send to Formspree
+    // Send to Formspree using form data
     try {
+      const formData = new FormData();
+      formData.append('name', form.name);
+      formData.append('email', form.email);
+      formData.append('message', form.message);
+      
       const res = await fetch('https://formspree.io/f/mnnzajep', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          message: form.message,
-        }),
+        body: formData,
       });
       
       if (res.ok) {
         setStatus('success');
         setForm({ name: '', email: '', message: '' });
+        console.log('Message sent successfully!');
       } else {
+        console.error('Formspree error:', res.status, res.statusText);
         setError('Failed to send message.');
         setStatus('error');
       }
