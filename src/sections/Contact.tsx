@@ -27,10 +27,15 @@ export const ContactSection = () => {
       formData.append('email', form.email);
       formData.append('message', form.message);
       
+      console.log('Sending message to Formspree...');
+      
       const res = await fetch('https://formspree.io/f/mnnzajep', {
         method: 'POST',
         body: formData,
+        mode: 'cors',
       });
+      
+      console.log('Response status:', res.status);
       
       if (res.ok) {
         setStatus('success');
@@ -38,11 +43,14 @@ export const ContactSection = () => {
         console.log('Message sent successfully!');
       } else {
         console.error('Formspree error:', res.status, res.statusText);
-        setError('Failed to send message.');
+        const errorText = await res.text();
+        console.error('Error details:', errorText);
+        setError('Failed to send message. Please try again.');
         setStatus('error');
       }
-    } catch {
-      setError('Network error.');
+    } catch (error) {
+      console.error('Network error details:', error);
+      setError('Network error. Please check your connection and try again.');
       setStatus('error');
     }
   };
